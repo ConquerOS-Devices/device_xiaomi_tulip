@@ -121,6 +121,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.imx376_sunny.low.lux=290
 
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
