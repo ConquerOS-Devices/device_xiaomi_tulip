@@ -26,6 +26,12 @@ DEVICE_PATH := device/xiaomi/tulip
 
 BOARD_VENDOR := xiaomi
 
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/msm8998/audio \
+    hardware/qcom-caf/msm8998/display \
+    hardware/qcom-caf/msm8998/media
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 ifeq ($(BOARD_AVB_ENABLE), true)
