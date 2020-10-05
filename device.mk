@@ -245,7 +245,7 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
 # FM
-BOARD_HAVE_QCOM_FM := true
+BOARD_HAVE_QCOM_FM := false
 
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_PACKAGES += \
