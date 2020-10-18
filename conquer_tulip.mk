@@ -19,14 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Custom stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common ConquerOS stuff
+$(call inherit-product, vendor/conquer/config/common.mk)
+CONQUER_BUILD_TYPE := BETA
 
 # Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_DEVICE := tulip
-PRODUCT_NAME := aosp_tulip
+PRODUCT_NAME := conquer_tulip
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro
 PRODUCT_MANUFACTURER := Xiaomi
